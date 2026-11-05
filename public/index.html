@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Chatbot</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>AI Chatbot</h2>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <div class="message bot">Hello! How can I help you today?</div>
+        </div>
+       <div class="chat-input">
+    <div class="input-area">
+        <!-- 1. File Input (Hidden) aur uska Label/Icon (Left Side) -->
+        <input type="file" id="file-input" name="file" hidden />
+        <label for="file-input" class="clip-icon">&#128279;</label> 
+        
+        <!-- 2. Text Input -->
+        <input type="text" id="userInput" placeholder="Type a message..." onkeydown="handleKeyPress(event)">
+        
+        <!-- 3. Send Button (Right Side) -->
+        <button id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
